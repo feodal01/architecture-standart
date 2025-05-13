@@ -1,0 +1,34 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+
+' People
+Person(customer, "Клиент", "Существующий клиент банка, использует интернет‑банк для открытия депозита")
+Person(prospect, "Потенциальный клиент", "Новый клиент, оставляет заявку на сайте")
+Person(ccOperator, "Оператор колл‑центра", "Подтверждает заявки и предлагает условия")
+Person(backOffice, "Менеджер бэк‑офиса депозитов", "Подтверждает ставки депозитов")
+
+' Internal systems boundary
+System_Boundary(stdBank, "Банк «Стандарт»") {
+  System(ibs, "Интернет‑банк", "ASP.NET MVC 4.5 монолит")
+  System(website, "Сайт банка", "PHP + React.js")
+  System(depositSvc, "Сервис заявок на депозиты (MVP)", "REST API · .NET 8 · MS SQL")
+  System_Ext(abs, "АБС", "Core Banking · Oracle")
+  System_Ext(ccSystem, "Система колл‑центра", "Java Spring Boot microservices")
+  System_Ext(smsGateway, "СМС‑шлюз", "HTTP API")
+}
+
+' Relationships
+customer -> ibs : "Подаёт заявку на депозит\nи подтверждает СМС‑код (UC1)"
+prospect -> website : "Оставляет заявку\nна депозит (UC2)"
+website -> depositSvc : "Создаёт заявку\nHTTPS/REST"
+ibs -> depositSvc : "Создаёт заявку\nHTTPS/REST"
+depositSvc -> abs : "Регистрирует заявку\nполучает ставку\n(PL/SQL API)"
+backOffice -> abs : "Подтверждает ставку"
+depositSvc -> smsGateway : "Уведомления о статусе\nСМС"
+ccOperator -> ccSystem : "Обработка заявок\nвыдаёт условия (UC3)"
+ccSystem -> depositSvc : "Чтение/обновление\nзаявок через API"
+ccSystem -> smsGateway : "СМС подтверждение"
+depositSvc --> ibs : "Статус\nи ставки"
+depositSvc --> website : "Статус заявки"
+@enduml
