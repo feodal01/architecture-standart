@@ -1,0 +1,63 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+  <diagram name="Страница — 1" id="DiOOihW0tfj2kU4KPcnY">
+    <mxGraphModel dx="942" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="H2gM-thVHqUPPB33H3PX-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="H2gM-thVHqUPPB33H3PX-1" target="H2gM-thVHqUPPB33H3PX-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H2gM-thVHqUPPB33H3PX-15" value="Доступ к ставкам" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="H2gM-thVHqUPPB33H3PX-14">
+          <mxGeometry x="-0.2955" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H2gM-thVHqUPPB33H3PX-1" value="Менеджер партнерского&lt;div&gt;колл центра&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="610" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H2gM-thVHqUPPB33H3PX-13" value="Доступ к ставкам" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H2gM-thVHqUPPB33H3PX-2" target="H2gM-thVHqUPPB33H3PX-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H2gM-thVHqUPPB33H3PX-2" value="Менеджер&lt;div&gt;колл центра&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="600" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H2gM-thVHqUPPB33H3PX-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="H2gM-thVHqUPPB33H3PX-3" target="H2gM-thVHqUPPB33H3PX-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H2gM-thVHqUPPB33H3PX-19" value="Расчет&amp;nbsp;&lt;div&gt;ставок&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="H2gM-thVHqUPPB33H3PX-18">
+          <mxGeometry x="-0.3858" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H2gM-thVHqUPPB33H3PX-3" value="Менеджер&lt;div&gt;бэк офиса&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="320" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H2gM-thVHqUPPB33H3PX-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="H2gM-thVHqUPPB33H3PX-4" target="H2gM-thVHqUPPB33H3PX-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H2gM-thVHqUPPB33H3PX-12" value="Передает файл&amp;nbsp;&lt;div&gt;со ставками&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="H2gM-thVHqUPPB33H3PX-11">
+          <mxGeometry x="0.4952" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H2gM-thVHqUPPB33H3PX-4" value="Банк &quot;Стандарт&quot;&lt;div&gt;[Software system]&lt;/div&gt;&lt;div&gt;Система банка&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0050ef;strokeColor=#001DBC;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="330" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H2gM-thVHqUPPB33H3PX-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="H2gM-thVHqUPPB33H3PX-5" target="H2gM-thVHqUPPB33H3PX-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H2gM-thVHqUPPB33H3PX-10" value="Запрос актуальных&lt;div&gt;ставок&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="H2gM-thVHqUPPB33H3PX-9">
+          <mxGeometry x="-0.0393" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H2gM-thVHqUPPB33H3PX-5" value="&lt;div&gt;Система колл центра&lt;/div&gt;&lt;div&gt;[Software system]&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="330" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H2gM-thVHqUPPB33H3PX-6" value="&lt;div&gt;Система партнерского&amp;nbsp; колл центра&lt;/div&gt;&lt;div&gt;[Software system]&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#647687;strokeColor=#314354;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="500" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
